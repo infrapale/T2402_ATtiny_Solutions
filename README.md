@@ -11,8 +11,18 @@ You can probably buy assembled programmers for the ATtiny85 but I did not want t
 In additon the the basic test setup I was also using a Kingst LA2016 Logic Analyzer. This proved to be fully 
 irreplaceable. I was also using the Nordic Semiconductor Power Profiler Kit II to measure the current consumption.
 
+![testing](/images/Test_Setup.png)
+
 ## Hardware
 
+![testing](/images/ATtiny85_programmer.png)
+![testing](/images/ATtiny85_Test_circuit.png)
+
+
 ## Software
+![testing](/images/edog_EEPROM_write_read.png)
+![testing](/images/EEPROM_Save_I2C.png)
+![testing](/images/EEPROM_Load_I2C.png)
 
 ## Results
+![testing](/images/Sleep_Current.png)
