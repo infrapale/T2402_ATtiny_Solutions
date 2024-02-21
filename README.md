@@ -1,1 +1,2 @@
 # T2402_ATtiny_Solutions
+My initial interest in the ATtiny85 is to build a combined power off circuit and a hardware watchdog. When learning more about the ATtiny85 I realized that this small chip can also provide the EEPROM that I have been lacking in some project. THe goal is to design a small PCB that I can use in different projects especially when using prototype boards.  This watchdog that I have started to call "edog" (energy saving watchdog). I could have adde stille one "e"for the EEPROM but I decided the edog sounds better.
