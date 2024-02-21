@@ -14,15 +14,35 @@ irreplaceable. I was also using the Nordic Semiconductor Power Profiler Kit II t
 ![testing](/images/Test_Setup.png)
 
 ## Hardware
+### Programmer
+
+The programmer is a slightly modified version of ATTiny programmers found on the web. I was using a Arduino Nano to get a compact programming and testing setup.
 
 ![testing](/images/ATtiny85_programmer.png)
+
+### Test Circuit
 ![testing](/images/ATtiny85_Test_circuit.png)
 
 
 ## Software
+The edog software is implementing following main functions:
+* Receive watchdog timeout from I2C
+* Receive watchdog clear from I2C
+* Receive sleep time from I2C
+* Receive goto sleep from I2C
+
+The edog software is built on following libraries
+* TinyWires.h    I2C implementation for ATtiny
+* tinysnore.h    Sleep function for ATTiny
+* EEPROM.h       Arduino EEPROM support
+
+### EEPROM Communication
 ![testing](/images/edog_EEPROM_write_read.png)
 ![testing](/images/EEPROM_Save_I2C.png)
 ![testing](/images/EEPROM_Load_I2C.png)
 
 ## Results
+So far I have not achieved the target 20uA sleep current. The sleep curent is now 70uA which is not too bad when running on AA batteries. 2000mAh/70uA = 28571 hours = 1190 days
+When running the ATtiny85 in this setup with 3.3V is consuming about 1mA.
+ 
 ![testing](/images/Sleep_Current.png)
